@@ -1,0 +1,90 @@
+.recipeDetailContain {
+  background-color: #f1b963;
+  width: 80%;
+  display: flex;
+  margin: 0 0 5% 6%;
+  padding: 1% 4%;
+  border-radius: 15px;
+}
+
+.headerContainer {
+  width: 50%;
+}
+
+.id {
+  color: grey;
+  font-size: small;
+}
+
+.descriptionContain {
+  margin: 0 0 6% 6%;
+}
+
+.dataContainer {
+  width: 50%;
+}
+
+.healtScore {
+  font-weight: bold;
+  margin: 6% 0 5% 0;
+}
+
+.stepsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 20px;
+  margin: auto;
+  margin: 0 0 0 6%;
+}
+
+.step {
+  border-radius: 15px;
+  padding: 3%;
+  width: 100%;
+  background-color: #f8f398;
+  transition: all 0.5s;
+}
+
+.step:hover {
+  background-color: #b9b572;
+  transition: all 0.5s;
+}
+
+.stepN {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.dietsContain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 20px;
+  margin: 6% 0 0 6%;
+}
+
+.diet {
+  background-color: #cbf078;
+  padding: 5%;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.loading {
+  display: flex;
+  margin: 0 0 10% 6%;
+  border-radius: 15px;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f1b963;
+  width: 88%;
+  font-weight: bold;
+  font-size: 3em;
+  padding: 2% 0 2% 0;
+}
+
+.gif {
+  width: 30%;
+  height: 30%;
+}

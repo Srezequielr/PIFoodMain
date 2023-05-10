@@ -1,0 +1,44 @@
+.paginated {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.buttons {
+  border: none;
+  background-color: #cbf078;
+  width: 3em;
+  height: 2em;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.selected{
+  border: none;
+  background-color: #8ca554;
+  width: 3em;
+  height: 2em;
+  border-radius: 10px;
+  font-weight: bold;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.unselected{
+  border: none;
+  background-color: #cbf078;
+  width: 3em;
+  height: 2em;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.buttons:hover {
+  transition: all 0.5s;
+  transform: scale(1.06);
+  background-color: #9fbc5e;
+}

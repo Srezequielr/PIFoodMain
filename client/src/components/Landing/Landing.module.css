@@ -1,0 +1,72 @@
+.landingContainer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: #cbf078;
+}
+
+.textContain {
+  background: #cbf078;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+.titleContain {
+  width: 90%;
+  background-color: #f8f398;
+  display: flex;
+  margin: auto;
+  border-radius: 30px;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+.buttonContain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  width: 30%;
+  margin: auto;
+  font-size: 1.5em;
+  background-color: #f8f398;
+  border-radius: 30px;
+  text-decoration: solid;
+  color: inherit;
+  transition: all 0.5s;
+}
+
+.button:hover {
+  background-color: #a8a365;
+  transition: 1s;
+}
+
+.imageConteiner {
+  width: 50%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.landingImage {
+  width: 100%;
+  object-fit: cover;
+}

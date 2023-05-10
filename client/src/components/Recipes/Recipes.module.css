@@ -1,0 +1,38 @@
+.recipesContainer {
+  background-color: #f1b963;
+  width: 80%;
+  margin: auto;
+  padding: 1.5% 0;
+  border-radius: 15px 15px 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 15px;
+}
+
+.paginatedContainer {
+  background-color: #f1b963;
+  width: 80%;
+  margin: auto;
+  border-radius: 0 0 15px 15px;
+  margin: 0 0 20% 10%;
+  padding: 1% 0 3% 0;
+}
+
+.loading {
+  display: flex;
+  margin: 0 0 10% 10%;
+  border-radius: 15px;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f1b963;
+  width: 80%;
+  font-weight: bold;
+  font-size: 3em;
+  padding: 2% 0 2% 0;
+}
+
+.gif {
+  width: 30%;
+  height: 30%;
+}

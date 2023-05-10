@@ -1,0 +1,46 @@
+.recipeContainer {
+  margin: 3%;
+  display: flex;
+  background-color: #f8f398;
+  flex-direction: column;
+  width: 70%;
+  padding: 2%;
+  border-radius: 15px;
+}
+
+.diets {
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.target {
+  background-color: #f1b963;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.dietsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 5px;
+}
