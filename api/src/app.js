@@ -30,7 +30,7 @@ server.use(bodyParser.json({ limit: "50mb" }));
 server.use(cookieParser());
 server.use(morgan("dev"));
 server.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "http://localhost:3000"); // cambiar por el enlace del deplpoy del front
+  res.header("Access-Control-Allow-Origin", "https://pi-food-main-gt2pubtvb-srezequielr.vercel.app/"); // cambiar por el enlace del deplpoy del front
   res.header("Access-Control-Allow-Credentials", "true");
   res.header(
     "Access-Control-Allow-Headers",
