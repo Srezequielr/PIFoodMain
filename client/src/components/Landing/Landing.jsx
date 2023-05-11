@@ -28,7 +28,7 @@ export default function Landing(props) {
       <div className={styles.imageConteiner}>
         <img
           src={landingPhoto}
-          alt="Landing image"
+          alt="Landing"
           className={styles.landingImage}
         />
       </div>

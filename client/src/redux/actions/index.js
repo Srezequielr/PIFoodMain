@@ -9,14 +9,13 @@ import {
   SORT_X_ALF,
   FILTER_X_DIETS,
   GET_MY_RECIPES,
-  LOCAL_HOST,
 } from "./types";
 
 export const getAllRecipes = () => {
   return async function (dispatch) {
     try {
       const data = await axios
-        .get(`${LOCAL_HOST}/recipes`)
+        .get(`/recipes`)
         .then((response) => response.data);
       return dispatch({ type: GET_ALL_RECIPES, payload: data });
     } catch (error) {
@@ -29,7 +28,7 @@ export const getRecipeDetail = (id) => {
   return async function (dispatch) {
     try {
       const data = await axios
-        .get(`${LOCAL_HOST}/recipes/${id}`)
+        .get(`/recipes/${id}`)
         .then((response) => response.data);
       return dispatch({ type: GET_RECIPE_DETAIL, payload: data });
     } catch (error) {
@@ -42,7 +41,7 @@ export const getDiets = () => {
   return async function (dispatch) {
     try {
       const data = await axios
-        .get("http://localhost:3001/diets")
+        .get("/diets")
         .then((response) => response.data);
       return dispatch({ type: GET_DIETS, payload: data });
     } catch (error) {
@@ -52,11 +51,10 @@ export const getDiets = () => {
 };
 
 export const getRecipeByName = (name) => {
-  console.log("entre a get by name");
   return async function (dispatch) {
     try {
       const data = await axios(
-        `http://localhost:3001/recipes?name=${name}`
+        `/recipes?name=${name}`
       ).then((response) => response.data);
       return dispatch({ type: GET_RECIPE_BY_NAME, payload: data });
     } catch (error) {
@@ -89,7 +87,7 @@ export const getMyRecipes = () => {
   return async function (dispatch) {
     try {
       const data = await axios
-        .get(`${LOCAL_HOST}/recipes`)
+        .get(`/recipes`)
         .then((response) => response.data);
         let result = data.filter((recipe) => isNaN(recipe.id));
         if (result.length === 0) {

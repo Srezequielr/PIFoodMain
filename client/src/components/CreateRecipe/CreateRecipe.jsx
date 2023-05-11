@@ -47,7 +47,6 @@ export function CreateRecipe(props) {
         diets: filter,
       });
     } else {
-      console.log("No tengo esa dieta, la voy a cargar");
       setForm({ ...form, diets: [...form.diets, pointer] });
     }
   };

@@ -39,16 +39,16 @@ export function RecipeDetail(props) {
             dangerouslySetInnerHTML={{ __html: recipeDetail.summary }}
           />
           <div className={styles.stepsContainer}>
-            {recipeDetail.steps?.map((step) => (
-              <div className={styles.step}>
+            {recipeDetail.steps?.map((step, index) => (
+              <div className={styles.step} key={index}>
                 <p className={styles.stepN}>Paso N° {step.number}</p>
                 <p>{step.step}</p>
               </div>
             ))}
           </div>
           <div className={styles.dietsContain}>
-            {recipeDetail.diets?.map((diet) => (
-              <div className={styles.diet}>{diet}</div>
+            {recipeDetail.diets?.map((diet, index) => (
+              <div key={index} className={styles.diet}>{diet}</div>
             ))}
           </div>
         </div>

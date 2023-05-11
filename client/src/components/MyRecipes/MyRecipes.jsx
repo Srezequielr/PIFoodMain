@@ -12,14 +12,16 @@ export default function MyRecipes(props) {
   let myRecipes = useSelector((state) => state.myRecipes);
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [recipesXPage, setRecipesXPage] = useState(9);
+  const [recipesXPage] = useState(9);
   const indexLastRecipe = currentPage * recipesXPage;
   const indexFirstRecipe = indexLastRecipe - recipesXPage;
 
+  let currentRecipes;
+
   if (myRecipes.length > 9) {
-    var currentRecipes = myRecipes.slice(indexFirstRecipe, indexLastRecipe);
+    currentRecipes = myRecipes.slice(indexFirstRecipe, indexLastRecipe);
   } else {
-    var currentRecipes = myRecipes;
+    currentRecipes = myRecipes;
   }
 
   const paginated = (pageNumber) => {
@@ -29,8 +31,6 @@ export default function MyRecipes(props) {
   useEffect(() => {
     dispatch(getMyRecipes());
   }, [dispatch]);
-
-  console.log("componente mis recetas", myRecipes);
 
   if (myRecipes[0] === null) {
     return (

@@ -1,4 +1,3 @@
-import { getAllRecipes } from "../actions";
 import {
   GET_ALL_RECIPES,
   GET_RECIPE_DETAIL,

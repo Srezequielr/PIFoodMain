@@ -11,21 +11,21 @@ export default function Recipes(props) {
   const dispatch = useDispatch();
   const recipes = useSelector((state) => state.recipes);
   const [currentPage, setCurrentPage] = useState(1);
-  const [recipesXPage, setRecipesXPage] = useState(9);
+  const [recipesXPage] = useState(9);
   const indexLastRecipe = currentPage * recipesXPage;
   const indexFirstRecipe = indexLastRecipe - recipesXPage;
 
+  let currentRecipes;
+
   if (recipes.length > 9) {
-    var currentRecipes = recipes.slice(indexFirstRecipe, indexLastRecipe);
+    currentRecipes = recipes.slice(indexFirstRecipe, indexLastRecipe);
   } else {
-    var currentRecipes = recipes;
+    currentRecipes = recipes;
   }
 
   const paginated = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
-
-  console.log("recetas del recetas", recipes);
 
   useEffect(() => {
     dispatch(getAllRecipes());

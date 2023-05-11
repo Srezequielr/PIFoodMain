@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Recipe.module.css";
 
-export default function Recipe({ title, id, image, diets, healthScore }) {
+export default function Recipe({ title, id, image, diets }) {
   return (
     <div className={styles.recipeContainer}>
       <div className={styles.imgContainer}>
@@ -12,16 +12,17 @@ export default function Recipe({ title, id, image, diets, healthScore }) {
         <Link className={styles.link} to={`recipes/${id}`}>
           <p className={diets.title}>{title}</p>
         </Link>
-        <p className={styles.diets}>{diets.length === 0? "No hay dietas": "Dietas"}</p>
+        <p className={styles.diets}>
+          {diets.length === 0 ? "No hay dietas" : "Dietas"}
+        </p>
         <div className={styles.dietsContainer}>
-          {diets?.map((diet) => (
-            <div key={diet.id} className={styles.target}>
-              <p key={diet.id}>{diet}</p>
+          {diets?.map((diet, index) => (
+            <div key={index} className={styles.target}>
+              <p>{diet}</p>
             </div>
           ))}
         </div>
       </div>
-
     </div>
   );
 }

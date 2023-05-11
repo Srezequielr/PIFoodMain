@@ -54,15 +54,12 @@ export default function Filters(props) {
     setCheckHS3(false);
     setCheckHS4(false);
     dispatch(getAllRecipes());
+    setSelected(null)
   };
 
   const checkBoxHandler = (event) => {
     const pointer = event.target.name;
     setSelected(pointer)
-    // const id = event.target.id;
-    
-    console.log("boton seleccionado", selected);
-    console.log("id del boton", pointer);
     dispatch(filterXDiets(pointer));
   };
 
@@ -138,48 +135,3 @@ export default function Filters(props) {
     </div>
   );
 }
-
-//const [isOn1, setIsOn1] = useState(false);
-// const [isOn2, setIsOn2] = useState(false);
-
-// function handleSwitch1Change(event) {
-//   setIsOn1(event.target.checked);
-//   setIsOn2(false);
-// }
-
-// function handleSwitch2Change(event) {
-//   setIsOn2(event.target.checked);
-//   setIsOn1(false);
-// }
-
-// return (
-//   <div>
-//     <label>
-//       Interruptor 1
-//       <input
-//         type="checkbox"
-//         checked={isOn1}
-//         onChange={handleSwitch1Change}
-//       />
-//     </label>
-//     <br />
-//     <label>
-//       Interruptor 2
-//       <input
-//         type="checkbox"
-//         checked={isOn2}
-//         onChange={handleSwitch2Change}
-//       />
-//     </label>
-//   </div>
-// );
-
-// const checkBoxHandler = (event) => {
-//   const pointer = event.target.name
-//   if (flagDiets.includes(pointer)) {
-//     flagDiets = flagDiets.filter((diet) => diet !== pointer)
-//   } else{
-//     flagDiets.push(pointer)
-//   }
-//   dispatch(filterXDiets(flagDiets))
-// }

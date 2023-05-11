@@ -7,5 +7,5 @@ export const SORT_X_HS = "SORT_X_HS";
 export const SORT_X_ALF = "SORT_X_ALF";
 export const FILTER_X_DIETS ="FILTER_X_DIETS"
 export const GET_MY_RECIPES ="GET_MY_RECIPES"
-export const LOCAL_HOST = "http://localhost:3001";
+
 
