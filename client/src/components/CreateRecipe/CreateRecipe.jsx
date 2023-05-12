@@ -70,7 +70,7 @@ export function CreateRecipe(props) {
     form.title = form.title.charAt(0).toUpperCase() + form.title.slice(1);
     let data = { ...form, steps: steps };
     console.log("body de create", data);
-    axios.post("http://localhost:3001/recipes", data);
+    axios.post("/recipes", data);
     alert("Receta creada correctamente");
   };
 
