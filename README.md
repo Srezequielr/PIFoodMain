@@ -2,6 +2,8 @@
 
 # **COMIDA+ 🥑** | Proyecto Individual
 
+<img height="150" src="./comida+Icon.png" />
+
 ## PRESENTACIÓN 
 
 -  Construir una Single Page Application utlizando las tecnologías: **React**, **Redux**, **Node**, **Express** y **Sequelize**.
