@@ -30,7 +30,16 @@ Este proyecto lo inicie en abril de 2023 Luego de unas breves vacaciones despues
 
 https://pi-food-main-alpha.vercel.app/
 
-## Notas 🗒️
+# Tecnologías Utilizadas
+
+- [ ] React
+- [ ] Redux
+- [ ] Express
+- [ ] Sequelize - Postgres
+- [ ] Styled Components
+- [ ] Axios
+
+# Notas 🗒️
 
 La idea de este proyecto es construir una aplicación web a partir de la API [**spoonacular**](https://spoonacular.com/food-api) en la que se pueda:
 
