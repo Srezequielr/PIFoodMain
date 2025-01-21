@@ -51,12 +51,12 @@ Para desplegar la aplicacion de forma local es necesario:
     Los nombres son los siguientes:
     
     ```
-    DB_USER: {Nombre de usuario}
-    DB_PASSWORD: {contraseña}
-    DB_HOST: localhost
-    DB_NAME: food
+    DB_USER={Nombre de usuario}
+    DB_PASSWORD={contraseña}
+    DB_HOST=localhost
+    DB_NAME=food
     ```
-  - en la consola de la carpeta Api despues de haber instalado las dependencias ejecutar el comando npm start
+  - en la consola de la carpeta Api despues de haber instalado las dependencias ejecutar el comando ```npm start```
 - Para hacer funcionar el Cliente  
   - Agregar un archivo .env.local dentro de la carpeta Client con lo siguiente:
   
